@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For You</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="birthday-mode">
+<canvas id="sakura-canvas"></canvas>
+
+<div id="birthdaySection">
+  <video class="cute-hero-video" autoplay muted loop playsinline src="background_Vidio/1.mp4"></video>
+  <div id="cuteFloats"></div>
+  <header class="h-screen relative flex items-center justify-center text-white overflow-hidden cute-hero">
+    <div class="absolute inset-0 cute-hero-overlay"></div>
+    <div class="absolute inset-0" style="background:radial-gradient(circle at 20% 50%,rgba(255,182,193,.3),transparent 50%),radial-gradient(circle at 80% 50%,rgba(200,180,255,.3),transparent 50%)"></div>
+    <div class="text-center z-10 p-4" data-aos="fade-in" data-aos-duration="1500">
+      <h1 class="text-5xl md:text-7xl font-anime drop-shadow-lg cute-title">selamat ulangtahun Via....</h1>
+      <p class="mt-4 text-xl font-semibold cute-subtitle">Semoga dihari hari mu dipenuhi kebaikan dan keberuntungan</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto p-6 md:p-12">
+    <section id="letterSection" class="letter-section my-16 md:my-24 max-w-3xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-anime text-sakura mb-8">Surat Spesial</h2>
+      <div class="text-left text-lg leading-relaxed space-y-4 cute-letter p-8 md:p-10">
+        <p class="letter-line">KATA KATA HARI INI!</p>
+        <p class="letter-line">kalau hari hari kamu buruk</p>
+        <p class="letter-line">mending keluar liat kucing makan krupuk</p>
+        <p class="letter-line">daripada pusing mikirin doi yang sering php</p>
+        <p class="letter-line">mending keluar santai sambil ngopi</p>
+        <p class="letter-line"></p>
+        <p class="letter-line">Selamat Ulang Tahun, ya!</p>
+        <p class="letter-line">Semoga di usia yang baru ini rezekimu makin lancar, mukamu makin glowing, dan beban hidupmu makin berkurang.</p>
+        <p class="letter-line">Panjang umur, sehat selalu, dan jangan lupa ditunggu traktirannya! Selamat menua</p>
+        <p class="letter-line letter-signature text-right mt-8">Rifan</p>
+      </div>
+    </section>
+
+    <!-- FOTO MANIS -->
+    <section class="my-16 md:my-24" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-anime text-sakura text-center mb-12">Foto Manis</h2>
+      <div class="space-y-16">
+        <div class="flex flex-col md:flex-row items-center gap-8 cute-card p-6 rounded-2xl" data-aos="fade-right">
+          <div class="w-full md:w-1/2 rounded-2xl shadow-xl border-4 border-white cute-img overflow-hidden">
+            <img src="assets/foto manis/1.jpeg" alt="Cerita 1" class="w-full h-auto rounded-xl">
+          </div>
+          <div class="text-center md:text-left"><h3 class="text-2xl font-anime text-sakura">Kecentilan Kamu</h3></div>
+        </div>
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 cute-card p-6 rounded-2xl" data-aos="fade-left">
+          <div class="w-full md:w-1/2 rounded-2xl shadow-xl border-4 border-white cute-img overflow-hidden">
+            <img src="assets/foto manis/2.jpeg" alt="Cerita 2" class="w-full h-auto rounded-xl">
+          </div>
+          <div class="text-center md:text-right"><h3 class="text-2xl font-anime text-sakura">Foto Imut Kamu</h3></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-8 cute-card p-6 rounded-2xl" data-aos="fade-right">
+          <div class="w-full md:w-1/2 rounded-2xl shadow-xl border-4 border-white cute-img overflow-hidden">
+            <img src="assets/foto manis/3.jpeg" alt="Cerita 3" class="w-full h-auto rounded-xl">
+          </div>
+          <div class="text-center md:text-left"><h3 class="text-2xl font-anime text-sakura">Foto Cantik Kamu</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRAME OF HUGS -->
+    <section class="my-16 md:my-24" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-anime text-sakura text-center mb-12">Frame of Hugs</h2>
+      <div class="max-w-lg mx-auto relative">
+        <div id="hofSlider" class="overflow-hidden rounded-2xl shadow-xl" style="background:linear-gradient(145deg,#fff5f7,#fff);border:3px solid #ffe4e9;">
+          <div id="hofTrack" class="flex transition-transform duration-500 ease-in-out">
+            <div class="min-w-full p-8 text-center">
+              <div class="w-full aspect-[4/3] rounded-2xl mb-4 cute-img overflow-hidden">
+                <img src="assets/frame of hugs/1.jpeg" alt="Frame 1" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <h3 class="text-2xl font-anime text-sakura">Cantik</h3>
+            </div>
+            <div class="min-w-full p-8 text-center">
+              <div class="w-full aspect-[4/3] rounded-2xl mb-4 cute-img overflow-hidden">
+                <img src="assets/frame of hugs/2.jpeg" alt="Frame 2" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <h3 class="text-2xl font-anime text-sakura">Manis</h3>
+            </div>
+            <div class="min-w-full p-8 text-center">
+              <div class="w-full aspect-[4/3] rounded-2xl mb-4 cute-img overflow-hidden">
+                <img src="assets/frame of hugs/3.jpeg" alt="Frame 3" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <h3 class="text-2xl font-anime text-sakura">Baik</h3>
+            </div>
+            <div class="min-w-full p-8 text-center">
+              <div class="w-full aspect-[4/3] rounded-2xl mb-4 cute-img overflow-hidden">
+                <img src="assets/frame of hugs/4.jpeg" alt="Frame 4" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <h3 class="text-2xl font-anime text-sakura">Istimewa</h3>
+            </div>
+          </div>
+        </div>
+        <button id="hofPrev" class="absolute -left-3 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-pink-100 rounded-full p-2.5 shadow-md transition-all hover:scale-110" style="border:2px solid #ffd6e0;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" /></svg></button>
+        <button id="hofNext" class="absolute -right-3 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-pink-100 rounded-full p-2.5 shadow-md transition-all hover:scale-110" style="border:2px solid #ffd6e0;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg></button>
+        <div id="hofDots" class="flex justify-center gap-2 mt-4"></div>
+      </div>
+    </section>
+
+    <!-- FOTO KECANTIKAN KAMU (9 FOTO PAS) -->
+    <section class="my-16 md:my-24" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-anime text-sakura text-center mb-12">Foto Kecantikan Kamu</h2>
+      <div id="lightgallery" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" href="assets/foto kecantikan kamu/1.jpeg"><img src="assets/foto kecantikan kamu/1.jpeg" alt="Galeri 1" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="100" href="assets/foto kecantikan kamu/2.jpeg"><img src="assets/foto kecantikan kamu/2.jpeg" alt="Galeri 2" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="200" href="assets/foto kecantikan kamu/3.jpeg"><img src="assets/foto kecantikan kamu/3.jpeg" alt="Galeri 3" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="300" href="assets/foto kecantikan kamu/4.jpeg"><img src="assets/foto kecantikan kamu/4.jpeg" alt="Galeri 4" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="400" href="assets/foto kecantikan kamu/5.jpeg"><img src="assets/foto kecantikan kamu/5.jpeg" alt="Galeri 5" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="500" href="assets/foto kecantikan kamu/6.jpeg"><img src="assets/foto kecantikan kamu/6.jpeg" alt="Galeri 6" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="600" href="assets/foto kecantikan kamu/7.jpeg"><img src="assets/foto kecantikan kamu/7.jpeg" alt="Galeri 7" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="700" href="assets/foto kecantikan kamu/8.jpeg"><img src="assets/foto kecantikan kamu/8.jpeg" alt="Galeri 8" class="w-full h-full object-cover"></a>
+        <a class="block w-full h-48 md:h-64 cute-img rounded-2xl overflow-hidden" data-aos="zoom-in" data-aos-delay="800" href="assets/foto kecantikan kamu/9.jpeg"><img src="assets/foto kecantikan kamu/9.jpeg" alt="Galeri 9" class="w-full h-full object-cover"></a>
+      </div>
+    </section>
+
+    <section class="my-16 md:my-24 text-center" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-anime text-sakura mb-4">semoga suka yah....</h2>
+      <div class="max-w-xl mx-auto rounded-2xl cute-gift-box p-8 flex items-center justify-center gap-3">
+        <img src="efek emot/kado.png" alt="Kado Spesial" style="width:40px;height:auto;filter:drop-shadow(0 10px 20px rgba(0,0,0,.25));">
+        <p class="text-white text-lg font-semibold">Ada hadiah spesial buat kamu di bawah!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-white p-12 text-center cute-footer">
+    <p class="text-xl mb-4">Aku punya sesuatu buat kamu nih</p>
+    <button id="openAlbumBtn" class="text-white px-12 py-4 rounded-full text-xl font-bold shadow-lg hover:scale-110 transition-all duration-300 cute-btn inline-flex items-center justify-center gap-3"><img src="efek emot/album2.png" alt="Album Spesial" style="width:40px;height:auto;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3));"> Buka Album Spesial <img src="efek emot/album2.png" alt="Album Spesial" style="width:40px;height:auto;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3));"></button>
+    <p class="text-sm opacity-80 mt-4">Klik untuk melihat album special kamu</p>
+  </footer>
+</div>
+
+<div id="albumSection" class="hidden">
+  <audio id="romanticMusic" src="assets/lagu.mp3.mp3" loop preload="auto"></audio>
+  <div id="sparkleContainer" class="sparkle-container"></div>
+  <div class="book-container" id="bookContainer">
+    <div class="book-shadow"></div>
+    <div class="book-spine"></div>
+    <div class="book-pages-stack"></div>
+    <div class="book" id="flipbook">
+      <div class="page" data-page="1"><div class="page-face front content-cover-brown"><div class="circle-brown"><div class="text-content"><h2>foto kecantikan</h2></div></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/1.jpeg" alt="Foto 1"></div></div></div>
+      <div class="page" data-page="2"><div class="page-face front"><div class="text-content"><h2>I like your eyes, you look away when you pretend not to care</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/2.jpeg" alt="Foto 2"></div></div></div>
+      <div class="page" data-page="3"><div class="page-face front"><div class="text-content"><h2>I like the dimples on the corners of the smile that you wear</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/3.jpeg" alt="Foto 3"></div></div></div>
+      <div class="page" data-page="4"><div class="page-face front"><div class="text-content"><h2>I like you more, the world may know but don't be scared</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/4.jpeg" alt="Foto 4"></div></div></div>
+      <div class="page" data-page="5"><div class="page-face front"><div class="text-content"><h2>Cause I'm falling deeper, baby be prepared</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/5.jpeg" alt="Foto 5"></div></div></div>
+      <div class="page" data-page="6"><div class="page-face front"><div class="text-content"><h2>I like your shirt, I like your fingers, love the way that you smell</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/6.jpeg" alt="Foto 6"></div></div></div>
+      <div class="page" data-page="7"><div class="page-face front"><div class="text-content"><h2>To be your favorite jacket, just so I could always be near</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/7.jpeg" alt="Foto 7"></div></div></div>
+      <div class="page" data-page="8"><div class="page-face front"><div class="text-content"><h2>I loved you for so long, sometimes it's hard to bear</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/8.jpeg" alt="Foto 8"></div></div></div>
+      <div class="page" data-page="9"><div class="page-face front"><div class="text-content"><h2>But after all this time, I hope you wait and see</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/9.jpeg" alt="Foto 9"></div></div></div>
+      <div class="page" data-page="10"><div class="page-face front"><div class="text-content"><h2>Love you every minute, every second</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/10.jpeg" alt="Foto 10"></div></div></div>
+      <div class="page" data-page="11"><div class="page-face front"><div class="text-content"><h2>Love you everywhere and any moment</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/11.jpeg" alt="Foto 11"></div></div></div>
+      <div class="page" data-page="12"><div class="page-face front"><div class="text-content"><h2>Always and forever I know I can't quit you</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/12.jpeg" alt="Foto 12"></div></div></div>
+      <div class="page" data-page="13"><div class="page-face front"><div class="text-content"><h2>Cause baby you're the one, I don't know how</h2></div></div><div class="page-face back"><div class="img-frame"><img src="assets/foto isian album/13.jpeg" alt="Foto 13"></div></div></div>
+      <div class="page" data-page="14"><div class="page-face front"><div class="text-content"><h2>I love you 'til the last of snow disappears ❤️</h2></div></div><div class="page-face back content-cover-brown"><div class="circle-brown"><div class="text-content"><h2>The End ❤️</h2></div></div></div></div>
+    </div>
+  </div>
+
+  <div id="flowerOverlay" class="flower-overlay flower-paused">
+    <div class="night"></div>
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__leafs flower__leafs--1">
+          <div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div>
+        </div>
+      </div>
+      <div class="flower flower--2"><div class="flower__leafs flower__leafs--2"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div></div><div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div></div>
+      <div class="flower flower--3"><div class="flower__leafs flower__leafs--3"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div></div><div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div></div>
+      <div class="flower flower--4"><div class="flower__leafs flower__leafs--4"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div></div><div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div></div>
+      <div class="flower flower--5"><div class="flower__leafs flower__leafs--5"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div></div><div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div></div>
+      <div class="flower flower--6"><div class="flower__leafs flower__leafs--6"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div></div><div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div></div>
+      <div class="flower flower--7"><div class="flower__leafs flower__leafs--7"><div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div><div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div></div><div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div></div>
+
+     <div class="grow-ans" style="--d:1.2s">
+      <div class="flower__g-long">
+      <div class="flower__g-long__top"></div>
+      <div class="flower__g-long__bottom"></div>
+      </div>
+      </div>
+      
+      <div class="growing-grass">
+      <div class="flower__grass flower__grass--1">
+      <div class="flower__grass--top"></div>
+      <div class="flower__grass--bottom"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+      <div class="flower__grass__overlay"></div>
+      </div>
+      </div>
+      
+      <div class="growing-grass">
+      <div class="flower__grass flower__grass--2">
+      <div class="flower__grass--top"></div>
+      <div class="flower__grass--bottom"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+      <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+      <div class="flower__grass__overlay"></div>
+      </div>
+      </div>
+      
+      <div class="grow-ans" style="--d:2.4s">
+      <div class="flower__g-right flower__g-right--1">
+      <div class="leaf"></div>
+      </div>
+      </div>
+      
+      <div class="grow-ans" style="--d:2.8s">
+      <div class="flower__g-right flower__g-right--2">
+      <div class="leaf"></div>
+      </div>
+      </div>
+      
+      <div class="grow-ans" style="--d:2.8s">
+      <div class="flower__g-front">
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8">
+      <div class="flower__g-front__leaf"></div>
+      </div>
+      <div class="flower__g-front__line"></div>
+      </div>
+      </div>
+      
+      <div class="grow-ans" style="--d:3.2s">
+      <div class="flower__g-fr">
+      <div class="leaf"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--1"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--2"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--3"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--4"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--5"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--6"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--7"></div>
+      <div class="flower__g-fr__leaf flower__g-fr__leaf--8"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--0">
+      <div class="grow-ans" style="--d:3s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:2.2s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.4s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--1">
+      <div class="grow-ans" style="--d:3.6s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.8s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:4s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--2">
+      <div class="grow-ans" style="--d:4s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.4s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.6s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--3">
+      <div class="grow-ans" style="--d:4s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--4">
+      <div class="grow-ans" style="--d:4s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--5">
+      <div class="grow-ans" style="--d:4s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--6">
+      <div class="grow-ans" style="--d:4.2s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.4s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.6s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.8s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+      
+      <div class="long-g long-g--7">
+      <div class="grow-ans" style="--d:3s">
+      <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.2s">
+      <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.5s">
+      <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+      <div class="leaf leaf--3"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="controls" id="controls"><button id="prevBtn">&#9198; Back</button><button id="togglePlay">&#9654; Auto Play</button><button id="nextBtn">Next &#9197;</button><button id="musicBtn">&#127925; Music</button></div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

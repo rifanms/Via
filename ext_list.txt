@@ -1,0 +1,13 @@
+﻿acebunny00.gemini-cli-launcher@0.1.0
+blackboxapp.blackbox@2.8.53
+blackboxapp.blackboxagent@3.7.0
+ms-python.debugpy@2026.6.0
+ms-python.python@2026.4.0
+ms-python.vscode-pylance@2026.3.1
+ms-python.vscode-python-envs@1.36.0
+ms-vscode.powershell@2025.4.0
+openai.chatgpt@26.901.22334
+ritwickdey.liveserver@5.7.10
+saoudrizwan.claude-dev@4.1.17
+sixth.sixth-ai@0.2.8
+sst-dev.opencode@0.0.13

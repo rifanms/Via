@@ -1,0 +1,61 @@
+﻿Accurate Online Direct Print
+Android Studio
+Bizagi Modeler
+CapCut
+CGS17_Setup_x64
+Copilot
+Corel Graphics - Windows Shell Extension
+Corel Graphics - Windows Shell Extension 32 Bit
+CorelDRAW Graphics Suite X7 - Capture (x64)
+CorelDRAW Graphics Suite X7 - Common (x64)
+CorelDRAW Graphics Suite X7 - Connect (x64)
+CorelDRAW Graphics Suite X7 - Custom Data (x64)
+CorelDRAW Graphics Suite X7 - Draw (x64)
+CorelDRAW Graphics Suite X7 - EN (x64)
+CorelDRAW Graphics Suite X7 - Filters (x64)
+CorelDRAW Graphics Suite X7 - FontNav (x64)
+CorelDRAW Graphics Suite X7 - IPM Content (x64)
+CorelDRAW Graphics Suite X7 - IPM T (x64)
+CorelDRAW Graphics Suite X7 - PHOTO-PAINT (x64)
+CorelDRAW Graphics Suite X7 - Photozoom Plugin (x64)
+CorelDRAW Graphics Suite X7 - Redist (x64)
+CorelDRAW Graphics Suite X7 - Setup Files (x64)
+CorelDRAW Graphics Suite X7 - VBA (x64)
+CorelDRAW Graphics Suite X7 - VideoBrowser (x64)
+CorelDRAW Graphics Suite X7 - Writing Tools (x64)
+CorelDRAW Graphics Suite X7 (64-Bit)
+Docker Desktop
+Dolby Audio X2 Windows API SDK
+Git
+GitHub CLI
+Google Chrome
+Intel(R) C++ Redistributables for Windows* on Intel(R) 64
+Kiro (User)
+Microsoft Edge WebView2 Runtime
+Microsoft Office LTSC Professional Plus 2021 - en-us
+Microsoft OneDrive
+Microsoft Project Professional 2021 - en-us
+Microsoft Teams
+Microsoft Update Health Tools
+Microsoft Visual Basic for Applications 7.1 (x64)
+Microsoft Visual Basic for Applications 7.1 (x64) English
+Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.28.29913
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211
+Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29913
+Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.28.29913
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211
+Microsoft Visual Studio Code (User)
+MySQL Server 8.4
+Nitro Pro
+Node.js
+Office 16 Click-to-Run Extensibility Component
+Office 16 Click-to-Run Licensing Component
+Postman x64 12.20.4
+Python 3.14.6
+Revo Uninstaller 2.7.0
+Teams Machine-Wide Installer
+Update for x64-based Windows Systems (KB5001716)
+Windows Subsystem for Linux
+WinRAR 7.20 (64-bit)
+XAMPP
